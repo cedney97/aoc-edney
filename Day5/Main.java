@@ -57,6 +57,7 @@ public class Main {
                 stacks.get(to).add(0, stacks.get(from).get(0));
                 stacks.get(from).remove(0);
             }
+            moveReader.close();
         }
 
         // System.out.println("----------");
@@ -113,6 +114,7 @@ public class Main {
             for (int j = 0; j < move; ++j) {
                 stacks.get(from).remove(0);
             }
+            moveReader.close();
         }
 
         String tops = "";
