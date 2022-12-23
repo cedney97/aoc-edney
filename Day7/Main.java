@@ -54,7 +54,7 @@ public class Main {
 
     public static int findSmallestDir(Directory head) {
         Map<String, Directory> dirs = head.getDirectories();
-        int minSize = 70_000_000;
+        // int minSize = 70_000_000;
         for (String name : dirs.keySet()) {
             Directory d = dirs.get(name);
             int thisSize = d.getTotalSize();
