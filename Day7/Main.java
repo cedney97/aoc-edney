@@ -141,6 +141,7 @@ public class Main {
                                 String name = lsReader.next();
                                 curr.addDirectory(name);
                             }
+                            lsReader.close();
                         }
                     }
                 }
