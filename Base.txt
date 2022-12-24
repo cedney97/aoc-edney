@@ -3,7 +3,13 @@ public class Main {
     private static final boolean GIVENS = true;
 
     public static Scanner setUpScanner() throws FileNotFoundException {
-        return GIVENS ? new Scanner(new File("DayN/given.txt")) : new Scanner(new File("DayN/input.txt"));
+        Scanner s;
+        if (GIVENS) {
+            s = new Scanner(new File("Day11/given.txt"));
+        } else {
+            s = new Scanner(new File("Day11/input.txt"));
+        }
+        return s;
     }
 
     public static void main (String[] args) throws FileNotFoundException {
