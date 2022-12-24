@@ -2,6 +2,10 @@ public class Main {
 
     private static final boolean GIVENS = true;
 
+    public static Scanner setUpScanner() throws FileNotFoundException {
+        return GIVENS ? new Scanner(new File("DayN/given.txt")) : new Scanner(new File("DayN/input.txt"));
+    }
+
     public static void main (String[] args) {
         System.out.println(problem1());
         System.out.println(problem2());
