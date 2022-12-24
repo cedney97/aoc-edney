@@ -6,16 +6,16 @@ public class Main {
         return GIVENS ? new Scanner(new File("DayN/given.txt")) : new Scanner(new File("DayN/input.txt"));
     }
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws FileNotFoundException {
         System.out.println(problem1());
         System.out.println(problem2());
     }
 
-    public static int problem1() {
+    public static int problem1() throws FileNotFoundException {
         return 0;
     }
 
-    public static int problem2() {
+    public static int problem2() throws FileNotFoundException {
         return 0;
     }
 }
