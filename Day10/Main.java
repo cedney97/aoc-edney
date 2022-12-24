@@ -17,7 +17,13 @@ public class Main {
     }
 
     public static Scanner setUpScanner() throws FileNotFoundException {
-        return GIVENS ? new Scanner(new File("Day10/given.txt")) : new Scanner(new File("Day10/input.txt"));
+        Scanner s;
+        if (GIVENS) {
+            s = new Scanner(new File("Day11/given.txt"));
+        } else {
+            s = new Scanner(new File("Day11/input.txt"));
+        }
+        return s;
     }
 
     public static int problem1() throws FileNotFoundException {
